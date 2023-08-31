@@ -1,0 +1,58 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="org.owasp.goatdroid.fourgoats">
+  <uses-sdk android:minSdkVersion="9" android:targetSdkVersion="15"/>
+  <application android:theme="@7F0A004E" android:label="@7F09000A" android:icon="@7F020080" android:debuggable="true">
+    <activity android:label="@7F09000A" android:name=".activities.Main">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN"/>
+        <category android:name="android.intent.category.LAUNCHER"/>
+      </intent-filter>
+    </activity>
+    <activity android:label="@7F09000B" android:name=".activities.Login"/>
+    <activity android:label="@7F09000C" android:name=".activities.Register"/>
+    <activity android:label="@7F09001C" android:name=".activities.Home"/>
+    <activity android:label="@7F09001D" android:name=".fragments.DoCheckin"/>
+    <activity android:label="@7F09000D" android:name=".activities.Checkins"/>
+    <activity android:label="@7F09000F" android:name=".activities.Friends"/>
+    <activity android:label="@7F090010" android:name=".fragments.HistoryFragment"/>
+    <activity android:label="@7F090010" android:name=".activities.History"/>
+    <activity android:label="@7F09000E" android:name=".activities.Rewards"/>
+    <activity android:label="@7F09001F" android:name=".activities.AddVenue"/>
+    <activity android:label="@7F090023" android:name=".activities.ViewCheckin" android:exported="true"/>
+    <activity android:label="@7F090024" android:name=".fragments.MyFriends"/>
+    <activity android:label="@7F090026" android:name=".fragments.SearchForFriends"/>
+    <activity android:label="@7F090012" android:name=".activities.ViewProfile" android:exported="true"/>
+    <activity android:label="@7F090028" android:name=".fragments.PendingFriendRequests"/>
+    <activity android:label="@7F090029" android:name=".activities.ViewFriendRequest"/>
+    <activity android:label="@7F09002D" android:name=".fragments.MyRewards"/>
+    <activity android:label="@7F09002E" android:name=".fragments.AvailableRewards"/>
+    <activity android:label="@7F09002F" android:name=".activities.Preferences"/>
+    <activity android:label="@7F090032" android:name=".activities.About"/>
+    <activity android:label="@7F090036" android:name=".activities.SendSMS"/>
+    <activity android:label="@7F090039" android:name=".activities.DoComment"/>
+    <activity android:label="@7F090010" android:name=".activities.UserHistory"/>
+    <activity android:label="@7F09003C" android:name=".activities.DestinationInfo"/>
+    <activity android:label="@7F090048" android:name=".activities.AdminHome"/>
+    <activity android:label="@7F09004A" android:name=".activities.AdminOptions"/>
+    <activity android:label="@7F090046" android:name=".fragments.ResetUserPasswords"/>
+    <activity android:label="@7F090047" android:name=".fragments.DeleteUsers"/>
+    <activity android:label="@7F090045" android:name=".activities.DoAdminPasswordReset"/>
+    <activity android:label="@7F090047" android:name=".activities.DoAdminDeleteUser"/>
+    <activity android:label="@7F090049" android:name=".activities.SocialAPIAuthentication" android:exported="true"/>
+    <activity android:label="@7F09000A" android:name=".activities.GenericWebViewActivity"/>
+    <service android:name=".services.LocationService">
+      <intent-filter>
+        <action android:name="org.owasp.goatdroid.fourgoats.services.LocationService"/>
+      </intent-filter>
+    </service>
+    <receiver android:label="Send SMS" android:name=".broadcastreceivers.SendSMSNowReceiver"> &gt;
+<intent-filter><action android:name="org.owasp.goatdroid.fourgoats.SOCIAL_SMS"/></intent-filter></receiver>
+  </application>
+  <uses-permission android:name="android.permission.SEND_SMS"/>
+  <uses-permission android:name="android.permission.CALL_PHONE"/>
+  <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+  <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+  <uses-permission android:name="android.permission.INTERNET"/>
+</manifest>
+
+
+

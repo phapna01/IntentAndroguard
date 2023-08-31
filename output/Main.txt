@@ -1,0 +1,22 @@
+Class: Lorg/owasp/goatdroid/fourgoats/activities/Main;
+	Methods: <init>
+		 invoke-direct, [(0, 0), (256, 73, 'Landroid/app/Activity;-><init>()V')]
+		 return-void, []
+	Methods: onCreate
+		 const/4, [(0, 3), (1, 0)]
+		 invoke-super, [(0, 4), (0, 5), (256, 99, 'Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V')]
+		 const, [(0, 1), (1, 2130903080)]
+		 invoke-virtual, [(0, 4), (0, 1), (256, 6485, 'Lorg/owasp/goatdroid/fourgoats/activities/Main;->setContentView(I)V')]
+		 invoke-virtual, [(0, 4), (256, 6483, 'Lorg/owasp/goatdroid/fourgoats/activities/Main;->getApplicationContext()Landroid/content/Context;')]
+		 move-result-object, [(0, 1)]
+		 iput-object, [(0, 1), (0, 4), (258, 3169, 'Lorg/owasp/goatdroid/fourgoats/activities/Main;->context Landroid/content/Context;')]
+		 new-instance, [(0, 0), (259, 825, 'Lorg/owasp/goatdroid/fourgoats/activities/Main$CheckSessionToken;')]
+		 invoke-direct, [(0, 0), (0, 4), (0, 3), (256, 6478, 'Lorg/owasp/goatdroid/fourgoats/activities/Main$CheckSessionToken;-><init>(Lorg/owasp/goatdroid/fourgoats/activities/Main; Lorg/owasp/goatdroid/fourgoats/activities/Main$CheckSessionToken;)V')]
+		 const/4, [(0, 1), (1, 2)]
+		 new-array, [(0, 1), (0, 1), (259, 964, '[Ljava/lang/Void;')]
+		 const/4, [(0, 2), (1, 0)]
+		 aput-object, [(0, 3), (0, 1), (0, 2)]
+		 const/4, [(0, 2), (1, 1)]
+		 aput-object, [(0, 3), (0, 1), (0, 2)]
+		 invoke-virtual, [(0, 0), (0, 1), (256, 6481, 'Lorg/owasp/goatdroid/fourgoats/activities/Main$CheckSessionToken;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;')]
+		 return-void, []

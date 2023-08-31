@@ -1,0 +1,9 @@
+Class: Lorg/owasp/goatdroid/fourgoats/activities/About;
+	Methods: <init>
+		 invoke-direct, [(0, 0), (256, 6633, 'Lorg/owasp/goatdroid/fourgoats/base/BaseActivity;-><init>()V')]
+		 return-void, []
+	Methods: onCreate
+		 invoke-super, [(0, 1), (0, 2), (256, 6639, 'Lorg/owasp/goatdroid/fourgoats/base/BaseActivity;->onCreate(Landroid/os/Bundle;)V')]
+		 const/high16, [(0, 0), (1, 32515)]
+		 invoke-virtual, [(0, 1), (0, 0), (256, 6327, 'Lorg/owasp/goatdroid/fourgoats/activities/About;->setContentView(I)V')]
+		 return-void, []
