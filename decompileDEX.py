@@ -4,8 +4,7 @@ from androguard.core.bytecodes import dvm
 def decompile_dex_from_apk(apk_file_path):
     # Load the APK file
     a = apk.APK(apk_file_path)
-    # Get the DEX file from the APK
-    dex_file_path = a.get_dex()
+
     # Load the DEX file
     d = dvm.DalvikVMFormat(a.get_dex())
     
